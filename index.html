@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Puntos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gestor de Puntos</h1>
+
+  <section id="kids-section">
+    <h2>Niños</h2>
+    <ul id="kids-list"></ul>
+
+    <input type="text" id="newKidName" placeholder="Nombre del niño">
+    <button onclick="addKid()">Añadir Niño</button>
+  </section>
+
+  <section id="edit-section">
+    <h2>Modificar Puntos</h2>
+    <select id="kidSelect"></select>
+    <input type="number" id="pointAmount" placeholder="Cantidad">
+    <button onclick="givePoints()">Dar Puntos</button>
+    <button onclick="takePoints()">Quitar Puntos</button>
+  </section>
+
+  <section id="levels-section">
+    <h2>Niveles (editable)</h2>
+    <ul id="levels-list"></ul>
+    <input type="text" id="lvlName" placeholder="Nombre Nivel">
+    <input type="color" id="lvlColor">
+    <input type="number" id="lvlMin" placeholder="Desde">
+    <input type="number" id="lvlMax" placeholder="Hasta">
+    <button onclick="addLevel()">Añadir Nivel</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
